@@ -95,14 +95,16 @@ const Home: NextPage = () => {
       >
         <Card
           cover={
+            // eslint-disable-next-line @next/next/no-img-element
             <img
               alt="example"
-              src="https://cdn.pixabay.com/photo/2016/12/13/15/13/background-1904289_640.jpg"
-              style={{ width: "84rem", height: "13rem" }}
+              src="https://media.licdn.com/dms/image/C4D1BAQH4nKPhee8q-w/company-background_10000/0/1519801535389?e=1684681200&v=beta&t=h_-XIqt_qPQtCY9pInvvqyJZqN0MTS3hJGjB7O_K0EY"
+              style={{ width: "84rem", height: "13rem", objectFit: "cover" }}
             />
           }
         ></Card>
       </div>
+      {/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4FheZ2Vug9em0KjgqPwgWA178OBdVGA22UnrvSBXkWadwy8eirYVIaviyC5WA_w2rP-y5yOkbSQ&usqp=CAU&ec=48665698 */}
 
       <br />
       <br />
