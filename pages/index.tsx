@@ -168,7 +168,7 @@ const Home: NextPage = () => {
                   src="https://ctfassets.imgix.net/vh7r69kgcki3/7FftQJ8Wcw7y0TQ8NLIS3b/157b910fa71a001dc85347eb639c626b/Web_150DPI-WeWork__-__21_Collyer_Quay__-__Singapore-15.jpg?auto=format%20compress&fit=crop&q=50&w=500px"
                   style={{
                     width: "60rem",
-                    height: "13rem",
+                    height: "27rem",
                     objectFit: "cover",
                   }}
                 />
