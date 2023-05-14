@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 // import Head from "next/head";
-import { Avatar, Col, Row, Button, Card, Progress } from "antd";
+import { Avatar, Col, Row, Button, Card, Progress, Space } from "antd";
 import { red, green } from "@ant-design/colors";
 import {
   SearchOutlined,
@@ -161,6 +161,20 @@ const Home: NextPage = () => {
           </Button>
         </Col>
       </Row>
+
+      <br />
+      <br />
+      <Space direction="vertical" size={16}>
+        <Card
+          title="Default size card"
+          extra={<a href="#">More</a>}
+          style={{ width: 300 }}
+        >
+          <p>Card content</p>
+          <p>Card content</p>
+          <p>Card content</p>
+        </Card>
+      </Space>
     </div>
   );
 };
