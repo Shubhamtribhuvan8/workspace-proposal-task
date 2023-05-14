@@ -143,16 +143,22 @@ const Home: NextPage = () => {
       </Row>
       <br />
       <br />
-      <Row>
+      <Row style={{ boxShadow: "0px 1px 0px 0px gainsboro" }}>
         <Col span={9} style={colStyle8}>
           {" "}
-          <Button style={{ height: "3rem" }}>Basic Info</Button>{" "}
-          <Button style={{ height: "3rem" }}>Files</Button>{" "}
-          <Button style={{ height: "3rem" }}>Mutual Action Plan</Button>{" "}
-          <Button style={{ height: "3rem" }}>Contact</Button>{" "}
+          <Button style={{ height: "3rem", fontWeight: "700" }}>
+            Basic Info
+          </Button>{" "}
+          <Button style={{ height: "3rem", fontWeight: "700" }}>Files</Button>{" "}
+          <Button style={{ height: "3rem", fontWeight: "700" }}>
+            Mutual Action Plan
+          </Button>{" "}
+          <Button style={{ height: "3rem", fontWeight: "700" }}>Contact</Button>{" "}
         </Col>
         <Col span={7} offset={8} style={colStyle9}>
-          <Button style={{ height: "3rem" }}>Internal Actions</Button>
+          <Button style={{ height: "3rem", fontWeight: "700" }}>
+            Internal Actions
+          </Button>
         </Col>
       </Row>
     </div>
