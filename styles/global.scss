@@ -1,0 +1,24 @@
+/* styles/global.scss */
+
+// Import your SCSS partials or define global styles here
+body {
+    font-family: Arial, sans-serif;
+  }
+  .main{
+    color: red !important;
+  }
+  .ant-card .ant-card-body{
+    padding: 0 !important;
+  }
+  .ant-progress-inner {
+    background-color: #ff0000 ;
+    
+    .ant-progress-text {
+      color: #fff; // Optional: Set the text color to white
+    }
+  }
+  
+  .ant-progress-bg {
+    background-color:  #ff0000;
+  }
+  
