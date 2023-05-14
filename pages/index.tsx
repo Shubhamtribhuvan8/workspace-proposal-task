@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import type { NextPage } from "next";
 // import Head from "next/head";
-import { Avatar, Col, Row, Button, Card, Progress, Space } from "antd";
+import { Avatar, Col, Row, Button, Card, Space } from "antd";
 import { red, green } from "@ant-design/colors";
 import {
   SearchOutlined,
@@ -8,7 +9,11 @@ import {
   QuestionCircleOutlined,
   CompassTwoTone,
   InboxOutlined,
+  DownloadOutlined,
+  EyeInvisibleOutlined,
+  DeleteOutlined,
 } from "@ant-design/icons";
+import CustomProgress from "./component/slider";
 const Home: NextPage = () => {
   const colStyle = { textAlign: "end", position: "relative", top: "1rem" };
   const colStyle2 = { textAlign: "start", position: "relative", top: "1rem" };
@@ -115,29 +120,7 @@ const Home: NextPage = () => {
         <Col span={8} offset={8} style={colStyle7}>
           <div>Mutual Action Plan 3%</div>
           <div>
-            <Progress
-              percent={3}
-              steps={17}
-              strokeColor={[
-                red[5],
-                green[6],
-                green[6],
-                green[5],
-                green[5],
-                red[5],
-                red[5],
-                red[5],
-                red[5],
-                green[6],
-                green[6],
-                green[5],
-                green[5],
-                red[5],
-                red[5],
-                red[5],
-                red[5],
-              ]}
-            />
+            <CustomProgress percent={3} steps={17} />
           </div>
         </Col>
       </Row>
@@ -164,17 +147,40 @@ const Home: NextPage = () => {
 
       <br />
       <br />
-      <Space direction="vertical" size={16}>
-        <Card
-          title="Default size card"
-          extra={<a href="#">More</a>}
-          style={{ width: 300 }}
-        >
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
-      </Space>
+
+      <Row>
+        <Col span={18} push={6}>
+          <Space direction="vertical" size={16}>
+            <Card
+              title="Company Profile"
+              extra={
+                <div style={{ gap: "13px", display: "flex" }}>
+                  <DownloadOutlined style={{ fontSize: "25px" }} />
+                  <EyeInvisibleOutlined style={{ fontSize: "25px" }} />
+                  <DeleteOutlined style={{ fontSize: "25px" }} />
+                </div>
+              }
+              style={{ position: "relative", width: "60rem", left: "4%" }}
+              cover={
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  alt="example"
+                  src="https://ctfassets.imgix.net/vh7r69kgcki3/7FftQJ8Wcw7y0TQ8NLIS3b/157b910fa71a001dc85347eb639c626b/Web_150DPI-WeWork__-__21_Collyer_Quay__-__Singapore-15.jpg?auto=format%20compress&fit=crop&q=50&w=500px"
+                  style={{
+                    width: "60rem",
+                    height: "13rem",
+                    objectFit: "cover",
+                  }}
+                />
+              }
+            ></Card>
+          </Space>
+        </Col>
+
+        <Col span={6} pull={18}>
+          <p>Love You Zindgi</p>
+        </Col>
+      </Row>
     </div>
   );
 };
