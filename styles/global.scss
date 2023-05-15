@@ -3,6 +3,7 @@
 // Import your SCSS partials or define global styles here
 body {
     font-family: Arial, sans-serif;
+    background-color: #f2fbf9;
   }
   .main{
     color: red !important;
@@ -32,4 +33,15 @@ body {
   }
   .ant-list-bordered.ant-list-sm .ant-list-item, :where(.css-dev-only-do-not-override-ed5zg0).ant-list-bordered.ant-list-sm .ant-list-header, :where(.css-dev-only-do-not-override-ed5zg0).ant-list-bordered.ant-list-sm .ant-list-footer {
     padding: 13px 16px !important;
+  }
+  .anticon svg {
+    font-size: xx-large !important;
+    position: relative !important;
+    display: inline-block !important;
+    top: 32% !important;
+  }
+  .ant-progress .ant-progress-text {
+    width: 1em !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
   }

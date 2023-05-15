@@ -14,6 +14,7 @@ import {
   DownloadOutlined,
   EyeInvisibleOutlined,
   DeleteOutlined,
+  PlusOutlined,
 } from "@ant-design/icons";
 import CustomProgress from "./component/slider";
 import Listes from "./component/list";
@@ -51,8 +52,8 @@ const Home: NextPage = () => {
     position: "relative",
     fontWeight: "Bold",
   };
-  const buttonstyle = { width: "10rem", height: "3rem" };
-  const iconStyle = { fontSize: "25px", strokeWidth: 1, margin: "0 16px" };
+  const buttonstyle = { width: "10rem", height: "3rem", fontWeight: "bold" };
+  const iconStyle = { fontSize: "25px", strokeWidth: 1, margin: "0 16px 15px" };
   const { Text } = Typography;
   return (
     <div>
@@ -62,9 +63,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       {/* <h1 className="main">Helllo</h1> */}
-      <br />
-      <br />
-      <br />
       <Row style={{ boxShadow: "1px 1px 1px 1px forestgreen", height: "64px" }}>
         <Col span={8} style={colStyle2}>
           <CompassTwoTone style={iconStyle} />
@@ -94,7 +92,6 @@ const Home: NextPage = () => {
           </Button>
         </Col>
       </Row>
-      <br />
       <br />
       <div
         style={{
@@ -145,21 +142,49 @@ const Home: NextPage = () => {
         </Card>
       </div>
       {/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4FheZ2Vug9em0KjgqPwgWA178OBdVGA22UnrvSBXkWadwy8eirYVIaviyC5WA_w2rP-y5yOkbSQ&usqp=CAU&ec=48665698 */}
-
-      <br />
+      <Card
+        bordered={true}
+        style={{
+          width: "15%",
+          height: "6rem",
+          position: "relative",
+          right: "-1rem",
+          top: "-4rem",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            alt="example"
+            src="https://www.logo.wine/a/logo/WeWork/WeWork-Icon-Logo.wine.svg"
+            style={{ width: "5rem", height: "6rem", objectFit: "cover" }}
+          />
+          <PlusOutlined />
+          <img
+            alt="example"
+            src="https://www.salesforce.com/news/wp-content/uploads/sites/3/2021/05/Salesforce-logo.jpg?resize=1024,576"
+            style={{ width: "5rem", height: "6rem", objectFit: "cover" }}
+          />
+        </div>
+      </Card>
       <br />
       <Row>
         <Col span={8} style={colStyle6}>
           Project Scope Recap
         </Col>
         <Col span={8} offset={8} style={colStyle7}>
-          <div>Mutual Action Plan 3%</div>
+          <div style={{ textAlign: "center" }}>Mutual Action Plan</div>
           <div>
             <CustomProgress percent={3} steps={17} />
           </div>
         </Col>
       </Row>
-      <br />
       <br />
       <Row style={{ boxShadow: "0px 1px 0px 0px gainsboro" }}>
         <Col span={9} style={colStyle8}>
@@ -181,7 +206,6 @@ const Home: NextPage = () => {
       </Row>
 
       <br />
-      <br />
 
       <Row>
         <Col span={18} push={6}>
@@ -189,7 +213,14 @@ const Home: NextPage = () => {
             <Card
               title="Company Profile"
               extra={
-                <div style={{ gap: "13px", display: "flex" }}>
+                <div
+                  style={{
+                    gap: "13px",
+                    display: "flex",
+                    bottom: "1rem",
+                    position: "relative",
+                  }}
+                >
                   <DownloadOutlined style={{ fontSize: "25px" }} />
                   <EyeInvisibleOutlined style={{ fontSize: "25px" }} />
                   <DeleteOutlined style={{ fontSize: "25px" }} />
