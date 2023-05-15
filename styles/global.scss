@@ -141,6 +141,14 @@ body {
       transform: skewX(-35deg) rotateY(125deg);
       transform-origin: top center;
     }
+    @media (max-width: 768px) {
+  .workspace2 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+  }
+}
     
     .imagesupport{
         position: absolute;

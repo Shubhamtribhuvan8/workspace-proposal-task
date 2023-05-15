@@ -16,6 +16,8 @@ import {
 import CustomProgress from "./component/slider";
 import Listes from "./component/list";
 import Navigation from "./component/navigation";
+import WorkForce from "./component/workforce";
+import Proposal from "./component/proposal";
 const Home: NextPage = () => {
   const { Text } = Typography;
   return (
@@ -28,32 +30,10 @@ const Home: NextPage = () => {
       <Navigation />
       <br />
       <br />
-      <Row className="row12">
-        <Col span={24} md={8} className="colStyle3">
-          WeWork + Salesforce
-        </Col>
-        <Col span={24} md={8} offset={0} className="colStyle4">
-          <Button type="primary" danger className="buttonStyle">
-            Publish/Share
-          </Button>
-        </Col>
-      </Row>
+      <WorkForce text={"WeWork + Salesforce"} buttonText={"Publish/Share"} />
       <br />
       <div className="div1">
-        <Card>
-          <div className="div2">
-            <img
-              alt="example"
-              src="https://media.licdn.com/dms/image/C4D1BAQH4nKPhee8q-w/company-background_10000/0/1519801535389?e=1684681200&v=beta&t=h_-XIqt_qPQtCY9pInvvqyJZqN0MTS3hJGjB7O_K0EY"
-              className="image2"
-            />
-            <div className="imagecut" />
-            <div className="workspace2">
-              <h2 style={{ margin: "auto" }}>Workspace</h2>
-              <h2 style={{ margin: "auto" }}>Proposal</h2>
-            </div>
-          </div>
-        </Card>
+        <Proposal />
       </div>
       {/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4FheZ2Vug9em0KjgqPwgWA178OBdVGA22UnrvSBXkWadwy8eirYVIaviyC5WA_w2rP-y5yOkbSQ&usqp=CAU&ec=48665698 */}
       <Card bordered={true} className="wework">
