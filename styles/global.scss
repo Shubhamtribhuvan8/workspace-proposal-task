@@ -41,7 +41,21 @@ body {
     top: 32% !important;
   }
   .ant-progress .ant-progress-text {
-    width: 1em !important;
+    width: 2em !important;
     font-size: 20px !important;
     font-weight: bold !important;
+  }
+
+  .iconmsgshare{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+  }
+
+  .ant-list-bordered {
+    background-color: white;
   }

@@ -3,7 +3,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import type { NextPage } from "next";
 // import Head from "next/head";
-import { Avatar, Col, Row, Button, Card, Space, Typography } from "antd";
+import { Avatar, Col, Row, Button, Card, Space, Typography, Badge } from "antd";
 
 import {
   SearchOutlined,
@@ -15,6 +15,9 @@ import {
   EyeInvisibleOutlined,
   DeleteOutlined,
   PlusOutlined,
+  ShareAltOutlined,
+  MessageOutlined,
+  MinusOutlined,
 } from "@ant-design/icons";
 import CustomProgress from "./component/slider";
 import Listes from "./component/list";
@@ -63,7 +66,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head> */}
       {/* <h1 className="main">Helllo</h1> */}
-      <Row style={{ boxShadow: "1px 1px 1px 1px forestgreen", height: "64px" }}>
+      <Row style={{ boxShadow: "1px 1px 1px 1px #d3d9d3", height: "64px" }}>
         <Col span={8} style={colStyle2}>
           <CompassTwoTone style={iconStyle} />
         </Col>
@@ -179,7 +182,9 @@ const Home: NextPage = () => {
           Project Scope Recap
         </Col>
         <Col span={8} offset={8} style={colStyle7}>
-          <div style={{ textAlign: "center" }}>Mutual Action Plan</div>
+          <div style={{ position: "relative", left: " -10rem" }}>
+            Mutual Action Plan
+          </div>
           <div>
             <CustomProgress percent={3} steps={17} />
           </div>
@@ -192,19 +197,47 @@ const Home: NextPage = () => {
           <Button style={{ height: "3rem", fontWeight: "700" }}>
             Basic Info
           </Button>{" "}
-          <Button style={{ height: "3rem", fontWeight: "700" }}>Files</Button>{" "}
-          <Button style={{ height: "3rem", fontWeight: "700" }}>
+          <Button
+            style={{
+              height: "3rem",
+              fontWeight: "700",
+              backgroundColor: "#f2fbf9",
+            }}
+          >
+            Files
+          </Button>{" "}
+          <Button
+            style={{
+              height: "3rem",
+              fontWeight: "700",
+              backgroundColor: "#f2fbf9",
+            }}
+          >
             Mutual Action Plan
           </Button>{" "}
-          <Button style={{ height: "3rem", fontWeight: "700" }}>Contact</Button>{" "}
+          <Button
+            style={{
+              height: "3rem",
+              fontWeight: "700",
+              backgroundColor: "#f2fbf9",
+            }}
+          >
+            Contact
+          </Button>{" "}
         </Col>
         <Col span={7} offset={8} style={colStyle9}>
-          <Button style={{ height: "3rem", fontWeight: "700" }}>
+          <Button
+            style={{
+              height: "3rem",
+              fontWeight: "700",
+              backgroundColor: "#f2fbf9",
+            }}
+          >
             Internal Actions
           </Button>
         </Col>
       </Row>
-
+      <br />
       <br />
 
       <Row>
@@ -282,12 +315,23 @@ const Home: NextPage = () => {
               }
             ></Card>
           </Space>
+          <div className="iconmsgshare">
+            <Badge count={6} offset={[5, -2]}>
+              <MessageOutlined style={{ fontSize: "16px" }} />
+            </Badge>
+            <MinusOutlined
+              style={{ fontSize: "16px", transform: "rotate(90deg)" }}
+            />
+            <ShareAltOutlined style={{ fontSize: "16px" }} />
+          </div>
         </Col>
 
         <Col span={6} pull={18}>
           <Listes />
         </Col>
       </Row>
+      <br />
+      <br />
     </div>
   );
 };
