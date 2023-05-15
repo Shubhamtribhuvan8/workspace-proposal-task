@@ -21,7 +21,7 @@ const UserMenu: React.FC = () => {
     <Col xs={12} sm={12} md={8} className="colStyle" offset={8}>
       <SearchOutlined style={iconStyle} />
       <InboxOutlined style={iconStyle} />
-      <Badge count={25} offset={[-10, 0]}>
+      <Badge count={25} offset={[-21, 0]}>
         <BellOutlined style={iconStyle} />
       </Badge>
       <QuestionCircleOutlined style={iconStyle} />
