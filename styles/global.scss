@@ -24,4 +24,12 @@ body {
   .ant-card-head{
     font-size: 21px !important;
   }
-  
+  .ant-col-6 {
+    max-width: 20% !important;
+  }
+  .ant-col-push-6 {
+    inset-inline-start: 19% !important;
+  }
+  .ant-list-bordered.ant-list-sm .ant-list-item, :where(.css-dev-only-do-not-override-ed5zg0).ant-list-bordered.ant-list-sm .ant-list-header, :where(.css-dev-only-do-not-override-ed5zg0).ant-list-bordered.ant-list-sm .ant-list-footer {
+    padding: 13px 16px !important;
+  }

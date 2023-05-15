@@ -1,8 +1,10 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import type { NextPage } from "next";
 // import Head from "next/head";
-import { Avatar, Col, Row, Button, Card, Space } from "antd";
-import { red, green } from "@ant-design/colors";
+import { Avatar, Col, Row, Button, Card, Space, Typography } from "antd";
+
 import {
   SearchOutlined,
   BellOutlined,
@@ -14,6 +16,7 @@ import {
   DeleteOutlined,
 } from "@ant-design/icons";
 import CustomProgress from "./component/slider";
+import Listes from "./component/list";
 const Home: NextPage = () => {
   const colStyle = { textAlign: "end", position: "relative", top: "1rem" };
   const colStyle2 = { textAlign: "start", position: "relative", top: "1rem" };
@@ -50,6 +53,7 @@ const Home: NextPage = () => {
   };
   const buttonstyle = { width: "10rem", height: "3rem" };
   const iconStyle = { fontSize: "25px", strokeWidth: 1, margin: "0 16px" };
+  const { Text } = Typography;
   return (
     <div>
       {/* <Head>
@@ -98,16 +102,46 @@ const Home: NextPage = () => {
           alignItems: "center",
         }}
       >
-        <Card
-          cover={
-            // eslint-disable-next-line @next/next/no-img-element
+        <Card>
+          <div style={{ position: "relative", width: "100%" }}>
             <img
               alt="example"
               src="https://media.licdn.com/dms/image/C4D1BAQH4nKPhee8q-w/company-background_10000/0/1519801535389?e=1684681200&v=beta&t=h_-XIqt_qPQtCY9pInvvqyJZqN0MTS3hJGjB7O_K0EY"
-              style={{ width: "84rem", height: "13rem", objectFit: "cover" }}
+              style={{ width: "83rem", height: "13rem", objectFit: "cover" }}
             />
-          }
-        ></Card>
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                right: 0,
+                width: "50%",
+                height: "100%",
+                background:
+                  "linear-gradient(to left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%)",
+              }}
+            />
+            <div
+              style={{
+                position: "absolute",
+                top: 25,
+                right: 0,
+                padding: "1rem",
+                // background: "rgba(0, 0, 0, 0.7)",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                color: "black",
+                fontWeight: "bold",
+                left: "31rem",
+                fontSize: "x-large",
+                lineHeight: "normal",
+              }}
+            >
+              <h2 style={{ margin: "auto" }}>Workspace</h2>
+              <h2 style={{ margin: "auto" }}>Proposal</h2>
+            </div>
+          </div>
+        </Card>
       </div>
       {/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4FheZ2Vug9em0KjgqPwgWA178OBdVGA22UnrvSBXkWadwy8eirYVIaviyC5WA_w2rP-y5yOkbSQ&usqp=CAU&ec=48665698 */}
 
@@ -160,25 +194,66 @@ const Home: NextPage = () => {
                   <DeleteOutlined style={{ fontSize: "25px" }} />
                 </div>
               }
-              style={{ position: "relative", width: "60rem", left: "4%" }}
+              style={{ position: "relative", width: "65rem", left: "4%" }}
               cover={
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
-                  alt="example"
-                  src="https://ctfassets.imgix.net/vh7r69kgcki3/7FftQJ8Wcw7y0TQ8NLIS3b/157b910fa71a001dc85347eb639c626b/Web_150DPI-WeWork__-__21_Collyer_Quay__-__Singapore-15.jpg?auto=format%20compress&fit=crop&q=50&w=500px"
+                <div
                   style={{
-                    width: "60rem",
+                    position: "relative",
+                    width: "65rem",
                     height: "27rem",
-                    objectFit: "cover",
                   }}
-                />
+                >
+                  <img
+                    alt="example"
+                    src="https://ctfassets.imgix.net/vh7r69kgcki3/7FftQJ8Wcw7y0TQ8NLIS3b/157b910fa71a001dc85347eb639c626b/Web_150DPI-WeWork__-__21_Collyer_Quay__-__Singapore-15.jpg?auto=format%20compress&fit=crop&q=50&w=500px"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                  <div
+                    style={{
+                      position: "absolute",
+                      top: "50%",
+                      left: "50%",
+                      transform: "translate(-50%, -50%)",
+                      textAlign: "center",
+                      width: "33%",
+                      boxShadow: "0px 0px 0px 0px black",
+                      backgroundColor: "#fff8f8",
+                      height: "8rem",
+                      opacity: "0.8",
+                    }}
+                  >
+                    <Text
+                      style={{
+                        color: "black",
+                        fontSize: "3rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      wework
+                    </Text>
+                    <br />
+                    <Text
+                      style={{
+                        color: "black",
+                        fontSize: "1rem",
+                        fontWeight: "bold",
+                      }}
+                    >
+                      For all the ways you work, we're here
+                    </Text>
+                  </div>
+                </div>
               }
             ></Card>
           </Space>
         </Col>
 
         <Col span={6} pull={18}>
-          <p>Love You Zindgi</p>
+          <Listes />
         </Col>
       </Row>
     </div>
