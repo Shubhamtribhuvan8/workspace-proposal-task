@@ -122,7 +122,11 @@ const Home: NextPage = () => {
                 height: "100%",
                 opacity: "1.6",
                 background:
-                  "linear-gradient(to left, rgb(263 273 255 / 86%) 0%, rgb(246 232 232 / 0%) 100%)",
+                  "linear-gradient(to left, rgb(263 273 255 / 89%) 0%, rgb(246 232 232 / 2%) 100%)",
+                transform: "skewX(-35deg) rotateY(125deg)",
+                transformOrigin: "top center",
+                // background:
+                //   "linear-gradient(to left, rgb(263 273 255 / 86%) 0%, rgb(246 232 232 / 0%) 100%)",
               }}
             />
             <div
