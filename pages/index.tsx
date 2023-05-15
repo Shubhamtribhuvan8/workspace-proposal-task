@@ -55,7 +55,11 @@ const Home: NextPage = () => {
     position: "relative",
     fontWeight: "Bold",
   };
-  const buttonstyle = { width: "10rem", height: "3rem", fontWeight: "bold" };
+  const buttonStyle = {
+    width: "10rem",
+    height: "3rem",
+    fontWeight: "bold",
+  };
   const iconStyle = { fontSize: "25px", strokeWidth: 1, margin: "0 16px 15px" };
   const { Text } = Typography;
   return (
@@ -67,10 +71,10 @@ const Home: NextPage = () => {
       </Head> */}
       {/* <h1 className="main">Helllo</h1> */}
       <Row style={{ boxShadow: "1px 1px 1px 1px #d3d9d3", height: "64px" }}>
-        <Col span={8} style={colStyle2}>
+        <Col xs={12} sm={12} md={8} style={colStyle2}>
           <CompassTwoTone style={iconStyle} />
         </Col>
-        <Col span={8} style={colStyle} offset={8}>
+        <Col xs={12} sm={12} md={8} style={colStyle} offset={8}>
           <SearchOutlined style={iconStyle} />
           <InboxOutlined style={iconStyle} />
           <BellOutlined style={iconStyle} />
@@ -85,12 +89,12 @@ const Home: NextPage = () => {
       </Row>
       <br />
       <br />
-      <Row>
-        <Col span={8} style={colStyle3}>
+      <Row style={{ justifyContent: "space-between" }}>
+        <Col span={24} md={8} style={colStyle3}>
           WeWork + Salesforce
         </Col>
-        <Col span={8} offset={8} style={colStyle4}>
-          <Button type="primary" danger style={buttonstyle}>
+        <Col span={24} md={8} offset={0} style={colStyle4}>
+          <Button type="primary" danger style={buttonStyle}>
             Publish/Share
           </Button>
         </Col>
@@ -118,7 +122,11 @@ const Home: NextPage = () => {
                 height: "100%",
                 opacity: "1.6",
                 background:
-                  "linear-gradient(to left, rgb(263 273 255 / 86%) 0%, rgb(246 232 232 / 0%) 100%)",
+                  "linear-gradient(to left, rgb(263 273 255 / 89%) 0%, rgb(246 232 232 / 2%) 100%)",
+                transform: "skewX(-35deg) rotateY(125deg)",
+                transformOrigin: "top center",
+                // background:
+                //   "linear-gradient(to left, rgb(263 273 255 / 86%) 0%, rgb(246 232 232 / 0%) 100%)",
               }}
             />
             <div
