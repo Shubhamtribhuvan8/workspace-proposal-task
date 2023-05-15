@@ -249,3 +249,19 @@ body {
       width: 43px !important;
       height: 38px !important;
   }
+  .workspace2 {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    padding: 1rem;
+    /* background: rgba(0, 0, 0, 0.7); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    left: 31rem;
+    font-size: x-large;
+    line-height: normal;
+  }
+  

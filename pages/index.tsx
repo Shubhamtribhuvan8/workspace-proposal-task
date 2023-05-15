@@ -3,13 +3,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Avatar, Col, Row, Button, Card, Space, Typography, Badge } from "antd";
+import { Col, Row, Button, Card, Space, Typography, Badge } from "antd";
 import {
-  SearchOutlined,
-  BellOutlined,
-  QuestionCircleOutlined,
-  CompassTwoTone,
-  InboxOutlined,
   DownloadOutlined,
   EyeInvisibleOutlined,
   DeleteOutlined,
@@ -22,7 +17,6 @@ import CustomProgress from "./component/slider";
 import Listes from "./component/list";
 import Navigation from "./component/navigation";
 const Home: NextPage = () => {
-  const iconStyle = { fontSize: "25px", strokeWidth: 1, margin: "0 16px 15px" };
   const { Text } = Typography;
   return (
     <div>
@@ -54,23 +48,7 @@ const Home: NextPage = () => {
               className="image2"
             />
             <div className="imagecut" />
-            <div
-              style={{
-                position: "absolute",
-                top: 25,
-                right: 0,
-                padding: "1rem",
-                // background: "rgba(0, 0, 0, 0.7)",
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                color: "black",
-                fontWeight: "bold",
-                left: "31rem",
-                fontSize: "x-large",
-                lineHeight: "normal",
-              }}
-            >
+            <div className="workspace2">
               <h2 style={{ margin: "auto" }}>Workspace</h2>
               <h2 style={{ margin: "auto" }}>Proposal</h2>
             </div>
