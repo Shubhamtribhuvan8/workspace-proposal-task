@@ -1,31 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+Next.js TypeScript App
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This repository contains a Next.js app written in TypeScript. Follow the steps below to clone the repository and run the app on your local machine.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##Prerequisites
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+    ```Node.js (version 12 or above)
+       npm (Node Package Manager)```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+##Clone the Repository
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+    Open your terminal and navigate to an empty folder where you want to clone the repository.
 
-## Learn More
+    Run the following command to clone the repository:
+    ```
+    https://github.com/Shubhamtribhuvan8/workspace-proposal-task.git ```
 
-To learn more about Next.js, take a look at the following resources:
+##Project Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    Navigate to the project folder using the following command:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+````
+cd my-app```
+
+Install the required npm packages by running the following command:
+````
+
+npm install ```
 
 ## Deploy on Vercel
 
