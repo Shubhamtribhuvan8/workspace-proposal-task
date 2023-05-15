@@ -1,21 +1,23 @@
 ## Getting Started
+# Next.js TypeScript App
 
-Next.js TypeScript App
+This repository contains a Next.js app written in TypeScript.
 
-This repository contains a Next.js app written in TypeScript. Follow the steps below to clone the repository and run the app on your local machine.
+## Prerequisites
 
-Prerequisites
+- Node.js (version 12 or above)
+- npm (Node Package Manager)
 
-    ```Node.js (version 12 or above)
-       npm (Node Package Manager)```
+## Getting Started
 
-Clone the Repository
+To get started with this project, follow the steps below.
 
-    Open your terminal and navigate to an empty folder where you want to clone the repository.
+### Clone the Repository
 
-    Run the following command to clone the repository:
-    ```
-    https://github.com/Shubhamtribhuvan8/workspace-proposal-task.git ```
+Clone the repository by running the following command in your terminal:
+
+```shell
+git clone https://github.com/suryathink/Assignment.git
 
 Project Setup
 
