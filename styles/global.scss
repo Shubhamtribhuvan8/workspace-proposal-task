@@ -1,5 +1,4 @@
 /* styles/global.scss */
-
 // Import your SCSS partials or define global styles here
 body {
     font-family: Arial, sans-serif;
@@ -59,4 +58,194 @@ body {
 
   .ant-list-bordered {
     background-color: white;
+  }
+
+ .colStyle2{
+   text-align: "start";
+    position: "relative";
+     top: 1rem;
+  };
+  .colStyle{
+    text-align:end; 
+    position:relative;
+     top: 1rem;
+  }
+  .colStyle3{
+      text-align: start;
+      position: relative;
+      color:black;
+      font-weight:bold;
+      font-size: 2rem;
+    };
+
+    .colStyle4{
+      text-align: end;
+      position: relative;
+    }
+    .colStyle6{
+        text-align: start;
+        position: relative;
+        color: black;
+        font-weight: bold;
+        font-size: 23px;
+    }
+   .colStyle7{
+      text-align: end;
+      position:relative;
+      color: black;
+      font-size: 19px;
+   }
+   .colStyle8{
+      text-align: start;
+      position: relative;
+      font-weight:bold,
+    };
+    .colStyle9{
+        text-align: end;
+        position: relative;
+        font-weight: bold;
+      };
+    .buttonStyle{
+        width: 10rem;
+        height: 3rem;
+        font-weight: bold;
+    }
+    .row11{
+      box-shadow: 1px 1px 1px 1px #d3d9d3;
+      height: 64px;
+    }
+    .row12{
+     justify-content: space-between;
+    }
+    .div1{
+        display: flex;
+        align-items: center,
+    }
+    .div2{
+       position:relative;
+        width: 100%;
+    }
+    .image2{
+       width: 83rem; 
+       height: 13rem; 
+       object-fit: cover ;
+    }
+    .imagecut {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      opacity: 1.6;
+      background: linear-gradient(to left, rgb(263 273 255 / 89%) 0%, rgb(246 232 232 / 2%) 100%);
+      transform: skewX(-35deg) rotateY(125deg);
+      transform-origin: top center;
+    }
+    
+    .imagesupport{
+        position: absolute;
+        top: 25;
+        right: 0;
+        padding: 1rem;
+        // background: "rgba(0, 0, 0, 0.7)",
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+        font-weight: bold;
+        left: 31rem;
+        font-size: x-large;
+        line-height: normal;
+    }
+    .workspace{
+      margin: auto;
+    }
+    .wework{
+        width: 15%;
+        height: 6rem;
+        position: relative;
+        right:-1rem;
+        top: -4rem;
+    }
+    .salesforce{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagewe{
+      width: 5rem;
+      height: 6rem;
+      object-fit: cover
+    }
+    .imagesalesforce{
+     width: 5rem;
+      height: 6rem ;
+      object-fit:cover;
+    }
+    .buttonsize{
+        height: 3rem;
+        font-weight: 700;
+        background-color: #f2fbf9;
+    }
+    .buttonfirst{
+      height: 3rem;
+       font-weight: 700 ;
+    }
+    .companyprofile{
+        gap: 13px;
+        display: flex;
+        bottom: 1rem;
+        position: relative;
+    }
+    .iconssizesnew{
+      font-size: 25px;
+    }
+    .companyworks{
+       position: relative;
+        width: 65rem;
+        left: 4%;
+    }
+    .companytask{
+        position: relative;
+        width: 65rem;
+        height: 27rem;
+    }
+    .workimage{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .nameofcompany{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 33%;
+        box-shadow: 0px 0px 0px 0px black;
+        background-color: #fff8f8;
+        height: 8rem;
+        opacity: 0.8;
+    }
+    .text1{
+        color: black;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .text2{
+        color: black;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .iconsizelast{
+       font-size: 16px;
+    }
+    .minusicon{
+     font-size: 16px;
+      transform: rotate(90deg);
+    }
+    .ant-avatar {
+      width: 43px !important;
+      height: 38px !important;
   }
