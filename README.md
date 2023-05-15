@@ -16,20 +16,25 @@ To get started with this project, follow the steps below.
 
 Clone the repository by running the following command in your terminal:
 
-```shell
-git clone https://github.com/suryathink/Assignment.git
+```git clone https://github.com/suryathink/Assignment.git```
 
-Project Setup
+### Project Setup
 
-    Navigate to the project folder using the following command:
-
-```
-cd my-app   ```
+ Navigate to the project folder using the following command:
+ 
+```cd my-app```
 
 Install the required npm packages by running the following command:
-````
 
-npm install ```
+```npm install``` 
+
+## Running the Project
+
+Start the development server by running the following command:
+
+```npm run dev```
+
+After a few seconds, the project will start, and you can access it at ```http://localhost:3000``` in your default browser.
 
 ## Deploy on Vercel
 
