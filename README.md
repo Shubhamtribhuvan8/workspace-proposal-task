@@ -29,7 +29,7 @@ Clone the repository by running the following command in your terminal:
 
  Navigate to the project folder using the following command:
  
-```cd my-app```
+```cd workspace-proposal-task```
 
 Install the required npm packages by running the following command:
 
