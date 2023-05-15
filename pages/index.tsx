@@ -116,8 +116,9 @@ const Home: NextPage = () => {
                 right: 0,
                 width: "50%",
                 height: "100%",
+                opacity: "1.6",
                 background:
-                  "linear-gradient(to left, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%)",
+                  "linear-gradient(to left, rgb(263 273 255 / 86%) 0%, rgb(246 232 232 / 0%) 100%)",
               }}
             />
             <div
