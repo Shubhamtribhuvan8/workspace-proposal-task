@@ -4,7 +4,6 @@
 import type { NextPage } from "next";
 // import Head from "next/head";
 import { Avatar, Col, Row, Button, Card, Space, Typography, Badge } from "antd";
-
 import {
   SearchOutlined,
   BellOutlined,
@@ -77,7 +76,9 @@ const Home: NextPage = () => {
         <Col xs={12} sm={12} md={8} style={colStyle} offset={8}>
           <SearchOutlined style={iconStyle} />
           <InboxOutlined style={iconStyle} />
-          <BellOutlined style={iconStyle} />
+          <Badge count={25} offset={[-10, 0]}>
+            <BellOutlined style={iconStyle} />
+          </Badge>
           <QuestionCircleOutlined style={iconStyle} />
           <Avatar
             style={iconStyle}
