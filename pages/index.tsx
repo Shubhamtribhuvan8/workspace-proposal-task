@@ -35,7 +35,6 @@ const Home: NextPage = () => {
       <div className="div1">
         <Proposal />
       </div>
-      {/* https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4FheZ2Vug9em0KjgqPwgWA178OBdVGA22UnrvSBXkWadwy8eirYVIaviyC5WA_w2rP-y5yOkbSQ&usqp=CAU&ec=48665698 */}
       <Card bordered={true} className="wework">
         <div className="salesforce">
           <img
